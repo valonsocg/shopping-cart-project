@@ -22,9 +22,10 @@
     font-size: var(--text-3xl);
   }
   h2 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
+    @apply font-semibold;
   }
   h3 {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
   }
 }
