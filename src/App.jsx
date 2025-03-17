@@ -4,9 +4,11 @@ function App() {
   return (
     <div className="bg-amber-50 font-sans text-amber-950">
       <header className="bg-white shadow-md">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <h1 className="cursor-pointer font-serif font-bold">Riplebella</h1>
-          <nav className="hidden space-x-6 md:flex">
+        <div className="container mx-auto flex flex-col items-center justify-center gap-4 p-4 sm:flex-row sm:justify-between">
+          <h1 className="cursor-pointer text-center font-serif font-bold">
+            Riplebella
+          </h1>
+          <nav className="hidden space-x-6 lg:flex">
             <a href="#beauty" className="hover:text-amber-700">
               Beauty
             </a>
@@ -20,19 +22,21 @@ function App() {
               Women
             </a>
           </nav>
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap place-content-center items-center space-x-4">
             <input
-              className="rounded-md border px-3 py-1 focus:ring-1 focus:ring-amber-200 focus:outline-none"
+              className="my-2 rounded-md border px-3 py-1 focus:ring-1 focus:ring-amber-200 focus:outline-none"
               type="text"
               placeholder="Search"
             />
-            <button className="cursor-pointer rounded-md bg-amber-800 px-4 py-1 font-semibold text-amber-50 hover:bg-amber-700">
-              Log in
-            </button>
-            <button className="flex cursor-pointer items-center gap-1.5 rounded-md border px-4 py-1 font-semibold hover:bg-amber-800 hover:text-amber-50">
-              Cart
-              <img src={cart} alt="shopping cart" className="size-5" />
-            </button>
+            <div className="flex items-center space-x-4">
+              <button className="cursor-pointer rounded-md bg-amber-800 px-4 py-1 font-semibold text-amber-50 hover:bg-amber-700">
+                Log in
+              </button>
+              <button className="flex cursor-pointer items-center gap-1.5 rounded-md border px-4 py-1 font-semibold hover:bg-amber-800 hover:text-amber-50">
+                Cart
+                <img src={cart} alt="shopping cart" className="size-5" />
+              </button>
+            </div>
           </div>
         </div>
       </header>
